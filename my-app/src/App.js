@@ -61,6 +61,18 @@ if(getStudentName() === "winnie") {
   );
 }
 
+  // using ternary conditionals in jsx
+  const gender = {
+    akutsang : 'female',
+    bobby : 'male',
+    dickson : 'male',
+    izo : 'male'
+  };
+
+  const topStudentGender = <h3>Gender:{gender[getStudentName() === 'winnie' ? 'akutsang' : 'bobby']}</h3>;
+
+
+
   return (
     <div className="App">
       <div>
@@ -73,6 +85,9 @@ if(getStudentName() === "winnie") {
       </div>
       <div>
         <h3>{topMessage}</h3>
+      </div>
+      <div>
+        <h3>{topStudentGender}</h3>
       </div>
     </div>
   );
