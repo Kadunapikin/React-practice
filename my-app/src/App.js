@@ -13,7 +13,7 @@ function App() {
 
   // three
   const people = ['Rowe', 'Prevost', 'Gare'];
-  const peopleList = people.map((person) => <li>{person}</li>);
+  const peopleList = people.map((person, i) => <li key={'person_' + i}>{person}</li>);
 
   return (
     <div className="App">
