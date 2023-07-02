@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+// How to list elements using .map in JSX
 function App() {
+  // one
+  const strings = ['Home', 'Shop', 'About Me'];
+  const listItems = strings.map(string => <li>{string}</li>);
+  
+  // two
+  const liArray = [
+    <li>item 1</li>, 
+    <li>item 2</li>, 
+    <li>item 3</li>
+  ];
+
+  // three
+  const people = ['Rowe', 'Prevost', 'Gare'];
+  const peopleList = people.map((person) => <li>{person}</li>);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>{listItems}</ul>
+      <ul>{liArray}</ul>
+      <ol>{peopleList}</ol>
     </div>
   );
 }
