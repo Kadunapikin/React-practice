@@ -43,6 +43,24 @@ function App() {
     </ol>
   );
 
+  // using if conditionals in jsx
+  const studentName = ["winnie", "bobai", "isaac"];
+
+  function getStudentName() {
+    return studentName[Math.floor(Math.random() * studentName.length)];
+}
+
+let topMessage;
+if(getStudentName() === "winnie") {
+  topMessage = (
+    <h3>Winnie is the only lady in TOP school batch A</h3>
+  );
+} else {
+  topMessage = (
+    <h3>It's one of the two guys in TOP school batch A</h3>
+  );
+}
+
   return (
     <div className="App">
       <div>
@@ -52,6 +70,9 @@ function App() {
       </div>
       <div>
         <ul>{studentList}</ul>
+      </div>
+      <div>
+        <h3>{topMessage}</h3>
       </div>
     </div>
   );
