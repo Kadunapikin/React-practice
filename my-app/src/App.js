@@ -27,6 +27,7 @@ function App() {
     <div>
       <h3>How to use react useState hooks</h3>
       <Counter />
+      <ColorPicker />
     </div>
     </>
   );
