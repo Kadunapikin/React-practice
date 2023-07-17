@@ -5,6 +5,8 @@ import NavList from './practice/NavBar';
 import Player from './practice/props';
 import Card from './practice/Card';
 import { comments } from './practice/Comments';
+import Counter from './practice/Counter';
+import ColorPicker from './practice/ColorPicker';
 
 function App() {
 
@@ -21,6 +23,10 @@ function App() {
       {comments.map((comment, index) => (
         <Card key={index} commentObject={comment} />
       ))}
+    </div>
+    <div>
+      <h3>How to use react useState hooks</h3>
+      <Counter />
     </div>
     </>
   );
