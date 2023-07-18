@@ -7,6 +7,7 @@ import Card from './practice/Card';
 import { comments } from './practice/Comments';
 import Counter from './practice/Counter';
 import ColorPicker from './practice/ColorPicker';
+import PhoneNumber from './practice/PhoneNumber';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <h3>How to use react useState hooks</h3>
       <Counter />
       <ColorPicker />
+      <PhoneNumber />
     </div>
     </>
   );
