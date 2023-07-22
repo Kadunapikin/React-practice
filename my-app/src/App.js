@@ -8,6 +8,7 @@ import { comments } from './practice/Comments';
 import Counter from './practice/Counter';
 import ColorPicker from './practice/ColorPicker';
 import PhoneNumber from './practice/PhoneNumber';
+import RpsReact from './practice/RpsReact';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
       <Counter />
       <ColorPicker />
       <PhoneNumber />
+      {/* <EditProfile /> */}
+      {/* <QuizNavBar /> */}
+      <RpsReact />
     </div>
     </>
   );
